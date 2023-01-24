@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+
+    <h1>Please sign up here</h1>
+
+    <div class="form-container" style="margin:10px; padding:10px;">
+        <form action="" class="" method="POST">
+            {{ dict.form.as_p }}
+            {% csrf_token %}
+            <input type="submit" name="Submit" value="Submit">
+        </form>
+    </div>
+
+
+    <table>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        {% for user in dict.users %}
+        <tr>
+            <th> {{ user.first_name }}</th>
+            <th> {{ user.last_name }}</th>
+            <th> {{ user.email }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+
+
+<style>
+    /* spacing */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+  border:1px solid black;
+}
+
+
+</style>
+</html>

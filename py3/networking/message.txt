@@ -1,0 +1,9 @@
+Hello world !
+
+
+This is a mail sent with Python !
+
+Subscribe to NeuralNine !
+
+Kind regards!
+Aridon Krasniqi

@@ -1,0 +1,12 @@
+# print()
+# input()
+# int()
+# bool()
+# float()
+# type()
+# """ Multiple line string """
+# str[started_index: end_index]
+# str[0:empty] [0:] entire string
+# str[:5] 0 to 5
+# str[:] entire string
+# formatted string str = f''

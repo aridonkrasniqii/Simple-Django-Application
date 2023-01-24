@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+
+
+{{ html|safe}}
+
+
+<h1>Django Framework</h1>
+<p>This is from about template</p>
+
+<h3>My Text</h3>
+{{ my_text }}
+
+<h3>My Number </h3>
+{{ my_number }}
+
+<h3>Summary </h3>
+{{my_summary}}
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+{% for item in my_numbers %}
+<!-- forloop.counter iteration number -->
+{% if item == 321 %}
+<li> {{ forloop.counter }} -- if statement {{ item|add:32}}</li>
+{% elif item == 323 %}
+<li> {{ forloop.counter }} -- elif statement {{ item }}</li>
+{% else %}
+<li> {{ forloop.counter }} -- else statement {{ item|capfirst }}</li>
+{% endif %}
+{% endfor %}
+
+
+{% endblock %}

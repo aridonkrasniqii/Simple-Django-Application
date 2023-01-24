@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% block body_block %}
+    <h1>Welcome to INDEX PAGE</h1>
+
+    <h1>{{ text|cut:'Hello' }}</h1> <br>
+    <h1>{{ text|cut:''}}</h1>
+    <h1>{{ text|aridon:'' }}</h1>
+    {% endblock %}
+
+</body>
+</html>`

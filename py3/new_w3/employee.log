@@ -1,0 +1,6 @@
+INFO:employee:Created employee: John Smith - John.Smith@email.com
+INFO:employee:Created employee: Corey Schafer - Corey.Schafer@email.com
+INFO:employee:Add: 10 + 5 = 15
+INFO:employee:Sub: 10 - 5 = 5
+INFO:employee:Mul: 10 * 5 = 50
+INFO:employee:Div: 10 / 5 = 2.0
